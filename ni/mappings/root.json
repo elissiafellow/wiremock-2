@@ -1,0 +1,21 @@
+{
+    "priority": 1,
+    "request": {
+        "method": "GET",
+        "urlPath": "/ni"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "message": "NI WireMock is running",
+            "version": "latest",
+            "admin": "/__admin",
+            "mappings": "/__admin/mappings",
+            "requests": "/__admin/requests",
+            "api": "/api/v1/MFCard/getPersonInfoByMnfId"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "POST",
+        "urlPath": "/ni/api/v1/MFCard/getPersonInfoByMnfId",
+        "bodyPatterns": [
+            {
+                "matchesJsonPath": "$[?(@.mnfuuid != '')]"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "bodyFileName": "getPersonInfoByMnfId-success.json"
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "data": {
+        "personId": "1102065",
+        "mnfuuid": "1102065",
+        "name": "Payment  automation",
+        "identityType": "NationalId",
+        "identity": "29312312312312",
+        "country": "EGYPT",
+        "phoneNumber": "+201190000002",
+        "accounts": [
+            {
+                "type": "MC Credit Card A/C (840)",
+                "accountNo": "MC_Prep_EGP_11278004",
+                "status": "Open",
+                "accountUID": null,
+                "currency": "EGP",
+                "remainingBalance": -250,
+                "availableBalance": -250,
+                "ledgerBalance": null,
+                "overdraft": 0
+            }
+        ],
+        "cards": [
+            {
+                "pan": "2232808031025382",
+                "maskedPAN": "2232********5382",
+                "mbr": "0",
+                "statusFO": 1,
+                "statusFOName": "Opened",
+                "statusBO": 4,
+                "statusBOName": "Given",
+                "cardGUID": "{250EBC55-4A65-0EAB-E064-00144FFA433E}",
+                "cardUID": "250EBC554A650EABE06400144FFA433E",
+                "expDate": "28/02/2027",
+                "accountNo": "MC_Prep_EGP_11278004",
+                "currency": "EGP",
+                "remainingBalance": -250,
+                "availableBalance": -250,
+                "ledgerBalance": null,
+                "overdraft": 0,
+                "issuancePriority": 0,
+                "colorName": "Blue"
+            }
+        ]
+    },
+    "count": 1,
+    "responseCode": 2020,
+    "statusCode": 200,
+    "responseMessage": "Success",
+    "errors": null
+}

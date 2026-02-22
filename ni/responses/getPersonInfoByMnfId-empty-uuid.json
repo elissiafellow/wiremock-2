@@ -1,0 +1,11 @@
+{
+    "responseCode": 4001,
+    "statusCode": 400,
+    "responseMessage": "mnfuuid is required",
+    "errors": [
+        {
+            "field": "mnfuuid",
+            "message": "must not be empty"
+        }
+    ]
+}
