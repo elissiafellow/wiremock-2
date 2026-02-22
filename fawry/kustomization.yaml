@@ -1,12 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: wiremock
+namespace: wiremock-fawry
 
 configMapGenerator:
   - name: wiremock-fawry-mappings-configs
     files:
-      - mappings/  # ← Just "mappings/" not "fawry/mappings/"
+      - mappings/*.json  # ← Use glob pattern to include all JSON files
     options:
       labels:
         app: wiremock-fawry
@@ -15,7 +15,7 @@ configMapGenerator:
   
   - name: wiremock-fawry-responses-configs
     files:
-      - responses/  # ← Just "responses/" not "fawry/responses/"
+      - responses/*.json  # ← Use glob pattern for responses too
     options:
       labels:
         app: wiremock-fawry
