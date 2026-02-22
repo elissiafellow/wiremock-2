@@ -5,8 +5,8 @@ namespace: wiremock
 
 configMapGenerator:
   - name: wiremock-fawry-mappings-configs
-    filesFrom:
-      - glob: "mappings/*.json"
+    files:
+      - mappings/*.json
     options:
       labels:
         app: wiremock-fawry
