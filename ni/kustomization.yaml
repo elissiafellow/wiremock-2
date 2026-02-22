@@ -1,14 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: wiremock-ni
+namespace: wiremock
 
 configMapGenerator:
   - name: wiremock-ni-mappings-configs
     files:
-      - mappings/root.json
-      - mappings/getPersonInfoByMnfId-success.json
-      - mappings/getPersonInfoByMnfId-empty-uuid.json
+      - root.json=mappings/root.json
+      - getPersonInfoByMnfId-success.json=mappings/getPersonInfoByMnfId-success.json
+      - getPersonInfoByMnfId-empty-uuid.json=mappings/getPersonInfoByMnfId-empty-uuid.json
     options:
       labels:
         app: wiremock-ni
@@ -17,10 +17,10 @@ configMapGenerator:
   
   - name: wiremock-ni-responses-configs
     files:
-      - responses/getPersonInfoByMnfId-success.json
-      - responses/getPersonInfoByMnfId-empty-uuid.json
+      - getPersonInfoByMnfId-success.json=responses/getPersonInfoByMnfId-success.json
+      - getPersonInfoByMnfId-empty-uuid.json=responses/getPersonInfoByMnfId-empty-uuid.json
     options:
       labels:
-        app: wiremock
+        app: wiremock-ni
         component: responses
       disableNameSuffixHash: true
