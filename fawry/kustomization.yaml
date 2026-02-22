@@ -6,19 +6,18 @@ namespace: wiremock
 configMapGenerator:
   - name: wiremock-fawry-mappings-configs
     files:
-      - fawry/mappings/root.json
-      - fawry/mappings/api-test.json
-      # Add more mapping files here
+      - mappings/  # ← Just "mappings/" not "fawry/mappings/"
     options:
       labels:
         app: wiremock-fawry
         component: mappings
+      disableNameSuffixHash: true
   
   - name: wiremock-fawry-responses-configs
     files:
-      - fawry/responses/large-response.json
-      # Add more response files here
+      - responses/  # ← Just "responses/" not "fawry/responses/"
     options:
       labels:
         app: wiremock-fawry
         component: responses
+      disableNameSuffixHash: true
