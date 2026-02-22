@@ -6,7 +6,7 @@ namespace: wiremock
 configMapGenerator:
   - name: wiremock-fawry-mappings-configs
     files:
-      - mappings/*.json
+      - mappings/
     options:
       labels:
         app: wiremock-fawry
@@ -15,7 +15,7 @@ configMapGenerator:
   
   - name: wiremock-fawry-responses-configs
     files:
-      - responses/*.json  # ← Use glob pattern for responses too
+      - responses/  # ← Use glob pattern for responses too
     options:
       labels:
         app: wiremock-fawry
