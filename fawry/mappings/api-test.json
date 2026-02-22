@@ -2,10 +2,7 @@
     "priority": 10,
     "request": {
         "method": "POST",
-        "urlPath": "/fawry/api/v1/test",
-        "headers": {
-            "Content-Type": "application/json"
-        }
+        "urlPath": "/fawry/api/v1/test"
     },
     "response": {
         "status": 200,
