@@ -1,0 +1,23 @@
+{
+    "priority": 10,
+    "request": {
+        "method": "POST",
+        "urlPath": "/fawry/api/v1/test",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "result": "success",
+            "data": {
+                "id": "12345",
+                "message": "Test API response"
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "huge": "json object",
+    "with": "lots of data",
+    "nested": {
+        "objects": {
+            "and": {
+                "arrays": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            }
+        }
+    }
+}

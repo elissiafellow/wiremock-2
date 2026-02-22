@@ -1,0 +1,24 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: wiremock
+
+configMapGenerator:
+  - name: wiremock-fawry-mappings-configs
+    files:
+      - fawry/mappings/root.json
+      - fawry/mappings/api-test.json
+      # Add more mapping files here
+    options:
+      labels:
+        app: wiremock-fawry
+        component: mappings
+  
+  - name: wiremock-fawry-responses-configs
+    files:
+      - fawry/responses/large-response.json
+      # Add more response files here
+    options:
+      labels:
+        app: wiremock-fawry
+        component: responses
