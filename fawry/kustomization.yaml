@@ -6,8 +6,8 @@ namespace: wiremock
 configMapGenerator:
   - name: wiremock-fawry-mappings-configs
     files:
-      - mappings/api-test.json
-      - mappings/root.json
+      - api-test.json=mappings/api-test.json
+      - root.json=mappings/root.json
     options:
       labels:
         app: wiremock-fawry
@@ -16,7 +16,7 @@ configMapGenerator:
   
   - name: wiremock-fawry-responses-configs
     files:
-      - responses/large-response.json
+      - large-response.json=responses/large-response.json
     options:
       labels:
         app: wiremock-fawry
